@@ -43,7 +43,7 @@ for f in "$SKILLS_DIR"/*/SKILL.md; do
 
   # twin may be the SKILL.md itself, the skill dir, or a monorepo containing <name>/
   target=""
-  case "$twin" in *SKILL.md) [ -f "$twin" ] && target="$twin" ;; esac
+  case "$twin" in *.md) [ -f "$twin" ] && target="$twin" ;; esac
   if [ -z "$target" ]; then
     for cand in "$twin/SKILL.md" "$twin/$name/SKILL.md"; do
       [ -f "$cand" ] && { target="$cand"; break; }
