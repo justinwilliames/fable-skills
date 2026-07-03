@@ -80,4 +80,4 @@ unverified.
 
 ## Sync home
 
-Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/coding-craft`) are distribution artifacts: edit the repo, re-copy.
+Sync home: github.com/justinwilliames/skills — canonical. Installed copies (e.g. `~/.claude/skills/coding-craft`) are distribution artifacts: edit the repo, re-copy.

@@ -81,4 +81,4 @@ version is a recommendation, not an option list.
 
 ## Sync home
 
-Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/challenge-before-build`) are distribution artifacts: edit the repo, re-copy.
+Sync home: github.com/justinwilliames/skills — canonical. Installed copies (e.g. `~/.claude/skills/challenge-before-build`) are distribution artifacts: edit the repo, re-copy.

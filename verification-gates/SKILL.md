@@ -82,4 +82,4 @@ communication half of this skill; this file is the epistemics half.
 
 ## Sync home
 
-Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/verification-gates`) are distribution artifacts: edit the repo, re-copy.
+Sync home: github.com/justinwilliames/skills — canonical. Installed copies (e.g. `~/.claude/skills/verification-gates`) are distribution artifacts: edit the repo, re-copy.

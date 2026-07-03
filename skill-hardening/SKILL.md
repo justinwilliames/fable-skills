@@ -101,4 +101,4 @@ This rubric operationalises the whole suite: R2/R7/R10 are
 
 ## Sync home
 
-Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/skill-hardening`) are distribution artifacts: edit the repo, re-copy.
+Sync home: github.com/justinwilliames/skills — canonical. Installed copies (e.g. `~/.claude/skills/skill-hardening`) are distribution artifacts: edit the repo, re-copy.

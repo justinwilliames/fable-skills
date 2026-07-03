@@ -33,11 +33,24 @@ The gap between a frontier model and a merely good one is mostly *operating disc
 | [slack-writer](slack-writer/SKILL.md) | Operator-grade Slack copy: authority-first, zero throat-clearing, slop-detection pipeline included |
 | [linkedin-post-writer](linkedin-post-writer/SKILL.md) | LinkedIn posts built from your voice guide: three proven structures, no-fabrication rules, banner compositor |
 
+## Machinery — delegation, loops & bridges
+
+| Skill | One-line contract |
+|---|---|
+| [intelligent-delegation](intelligent-delegation/SKILL.md) | Multi-model orchestration: six-question triage, tiered routing (apex/build/cheap-parallel/1M-context), manifest-driven fan-out with QA gates |
+| [claude-build-hardening](claude-build-hardening/SKILL.md) | Adversarial multi-reviewer hardening of build specs before implementation |
+| [infinite-working-skill](infinite-working-skill/SKILL.md) | Self-resuming autonomous work loops with idempotency ledgers and hard approval gates |
+| [codex](codex/SKILL.md) | Bridge to OpenAI Codex as a background delegate for precision coding and cross-family review |
+| [codex-imagegen](codex-imagegen/SKILL.md) | Raster image generation/editing routed through Codex, with output verification and known-defect handling |
+| [computer-control](computer-control/SKILL.md) | Screen-driving router: browser automation vs native-app control, with the right engine per surface |
+
 ## Toolkit — agent operations
 
 | Skill | One-line contract |
 |---|---|
 | [subagent-brief](subagent-brief/SKILL.md) | Seven-block template for briefing sub-agents so they operate at the same standard as the orchestrator |
+| [self-performance-review](self-performance-review/SKILL.md) | Weekly evidence-based self-review — pulls your comms/calendar/session data, benchmarks against management canon, grades last week's targets |
+| [calendar-review](calendar-review/SKILL.md) | Calendar hygiene audit — protects focus blocks, finds slots, flags conflicts with concrete fallbacks |
 | [claude-memory](claude-memory/SKILL.md) | Tiered memory system (session → project → global → federated) with backup, doctor, ledger, and hook scripts |
 | [session-namer](session-namer/SKILL.md) | Generates clean, searchable session names from Claude Code conversation history via headless automation |
 | [posthog-design-customization](posthog-design-customization/SKILL.md) | PostHog dashboard colour-theming protocol via browser-fetch PATCH; documents the MCP field-stripping workaround |

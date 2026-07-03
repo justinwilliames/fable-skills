@@ -75,4 +75,4 @@ Before delivering: (1) grep-pass the tell table; (2) read the draft start to fin
 
 ## Sync home
 
-Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/writing-craft`) are distribution artifacts: edit the repo, re-copy.
+Sync home: github.com/justinwilliames/skills — canonical. Installed copies (e.g. `~/.claude/skills/writing-craft`) are distribution artifacts: edit the repo, re-copy.
