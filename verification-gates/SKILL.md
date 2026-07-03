@@ -79,3 +79,7 @@ evidence, treat the claim as unverified and either re-check yourself or relay it
 communication half of this skill; this file is the epistemics half.
 [challenge-before-build](../challenge-before-build/SKILL.md) applies the same discipline
 *before* work starts.
+
+## Sync home
+
+Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/verification-gates`) are distribution artifacts: edit the repo, re-copy.

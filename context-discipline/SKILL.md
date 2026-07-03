@@ -82,3 +82,7 @@ re-attempting a proven failure is the costliest handoff defect.
 [operator-standard](../operator-standard/SKILL.md) — the communication discipline the lean
 seat exists to serve. [skill-hardening](../skill-hardening/SKILL.md) — applies this economy
 rule to skill files themselves (R10).
+
+## Sync home
+
+Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/context-discipline`) are distribution artifacts: edit the repo, re-copy.

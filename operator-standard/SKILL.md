@@ -110,3 +110,7 @@ misleading report costs the user an hour.
 - Related: [verification-gates](../verification-gates/SKILL.md) (what "verified" means),
   [challenge-before-build](../challenge-before-build/SKILL.md) (what to do before acting),
   [context-discipline](../context-discipline/SKILL.md) (keeping the session sharp).
+
+## Sync home
+
+Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/operator-standard`) are distribution artifacts: edit the repo, re-copy.

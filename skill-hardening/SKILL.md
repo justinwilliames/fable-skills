@@ -98,3 +98,7 @@ This rubric operationalises the whole suite: R2/R7/R10 are
 [verification-gates](../verification-gates/SKILL.md), the audit's evidence rule is
 [challenge-before-build](../challenge-before-build/SKILL.md), and R10 is
 [context-discipline](../context-discipline/SKILL.md) for files.
+
+## Sync home
+
+Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/skill-hardening`) are distribution artifacts: edit the repo, re-copy.

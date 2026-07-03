@@ -30,16 +30,25 @@ for f in "$SKILLS_DIR"/*/SKILL.md; do
 
   tw=$(echo "$line" | grep -oE '~/code/[A-Za-z0-9._/-]+' | head -1)
   if [ -z "$tw" ]; then
-    printf '%-45s LOCAL-ONLY\n' "$name"
-    continue
+    # canonical declared as a GitHub URL — try the conventional local clone ~/code/<repo>
+    ghrepo=$(echo "$line" | grep -oE 'github\.com/[A-Za-z0-9._-]+/[A-Za-z0-9._-]+' | head -1)
+    if [ -n "$ghrepo" ]; then
+      tw="~/code/$(basename "$ghrepo")"
+    else
+      printf '%-45s LOCAL-ONLY\n' "$name"
+      continue
+    fi
   fi
   twin="${tw/#\~/$HOME}"
 
-  # twin path may point at the skill dir or at a monorepo containing <name>/
+  # twin may be the SKILL.md itself, the skill dir, or a monorepo containing <name>/
   target=""
-  for cand in "$twin/SKILL.md" "$twin/$name/SKILL.md"; do
-    [ -f "$cand" ] && { target="$cand"; break; }
-  done
+  case "$twin" in *SKILL.md) [ -f "$twin" ] && target="$twin" ;; esac
+  if [ -z "$target" ]; then
+    for cand in "$twin/SKILL.md" "$twin/$name/SKILL.md"; do
+      [ -f "$cand" ] && { target="$cand"; break; }
+    done
+  fi
   if [ -z "$target" ]; then
     printf '%-45s MISSING twin (%s)\n' "$name" "$tw"
     drift=1

@@ -81,3 +81,7 @@ compositing layer instead (the invariant-symptom rule, applied to pixels).
 | **Palette by vibes** | Brand colors "checked" without sampling pixels |
 | **Re-roll churn** | Discarding an 80%-right output instead of delta-editing |
 | **Engine stubbornness** | Third attempt at a defect two deltas already failed to fix |
+
+## Sync home
+
+Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/image-generation-craft`) are distribution artifacts: edit the repo, re-copy.

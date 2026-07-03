@@ -77,3 +77,7 @@ unverified.
 | **Shotgun debugging** | Second simultaneous edit before observing the first |
 | **Assertion weakening** | A test "fixed" by loosening what it checks |
 | **Confident guess** | "This should fix it" on an unreproduced bug |
+
+## Sync home
+
+Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/coding-craft`) are distribution artifacts: edit the repo, re-copy.

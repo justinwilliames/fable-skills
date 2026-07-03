@@ -78,3 +78,7 @@ your observation just falsified it; that's exactly the moment to speak.
 [verification-gates](../verification-gates/SKILL.md) — the same evidence discipline, applied
 after the work. [operator-standard](../operator-standard/SKILL.md) Rule 5 — the sharpest
 version is a recommendation, not an option list.
+
+## Sync home
+
+Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/challenge-before-build`) are distribution artifacts: edit the repo, re-copy.

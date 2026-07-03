@@ -72,3 +72,7 @@ Before delivering: (1) grep-pass the tell table; (2) read the draft start to fin
 | **Author bleed** | Your default voice visible in someone else's channel |
 | **Length as effort-signal** | Draft is long because cutting felt risky, not because content demanded it |
 | **Hedge sandwich** | Position stated, then immediately un-stated for balance |
+
+## Sync home
+
+Sync home: github.com/justinwilliames/fable-skills — canonical. Installed copies (e.g. `~/.claude/skills/writing-craft`) are distribution artifacts: edit the repo, re-copy.
