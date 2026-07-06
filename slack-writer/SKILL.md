@@ -8,6 +8,24 @@ description: >
 
 Produce copy-paste-ready Slack messages for internal team communications. Zero editing needed by the user.
 
+## The send gate — Claude is never the last set of eyes (non-negotiable)
+
+This skill produces a **draft for the operator to read, then send** — never a message to fire on autopilot. Every draft leaves assuming a human read is still owed. Before anything built here reaches a person or a channel, it clears three gates. State it in one line when handing over a substantive draft: *"Read it before you send — [N] number(s)/claim(s) to eyeball first."*
+
+**1. Signal, not volume.** If the message can be half the length and lose nothing, halve it. One distilled update beats a slab. For status/progress updates, lead with the 1–3 things that actually matter and cut the rest — a reader who has to wade for the point stops reading, then stops trusting the sender. Verbosity is the default failure mode of AI-drafted comms; fight it on every draft. "Lots of information, all great, but no one has time to read it" is the complaint this gate exists to kill.
+
+**2. Every number is verified or it's cut.** No stat, metric, %, count, dollar figure, or factual claim goes in a draft unless it came from a live tool result in *this* session. Never estimate, never recall a figure from memory, never carry a number forward from an earlier draft without re-checking it. If you can't stand behind it 100%, delete it — do not hedge it. One wrong number discredits every right one around it. *The signal isn't worth the confusion.*
+
+**3. Stay in the operator's lane.** For a status/update message, default to the operator's own function. Don't fold in other people's domains (someone else's churn figures, another team's metrics) unless the operator explicitly asked. Breadth reads as overreach; depth in your own lane reads as ownership.
+
+**Flag, don't bury.** If a draft contains any claim you could not verify this session, list it *above* the draft as `⚠️ verify before sending`, one line per claim — never slip an unverified fact into the body and hope it rides through. The operator decides what ships; the skill's job is to surface, not smuggle.
+
+Why this is gate #1: the reader is often a busy exec who pattern-matches the sender to the quality of whatever lands in their inbox. Polished-and-short builds trust; long-and-loose burns it even when the underlying work is excellent. The slop check below guards *how it reads*; this gate guards *whether it's true, tight, and owned.*
+
+## Recipient gate — high-stakes named readers
+
+Some drafts go to a specific senior reader whose preferences you already know. For those, run their recipient gate on top of the send gate before handover: lead with what *they* read first, cut what they've told you they skip, match their escalation pattern, dial tone to how they receive it. If the operator keeps a persona file for the recipient, load and apply it. Never manufacture a scheduled status ritual to a manager who hasn't asked for one.
+
 ## Markup Default
 
 This skill **always uses Slack markup** in output: `*bold*`, `_italic_`, `~strike~`, and `` `code` ``. The user has confirmed markup mode is enabled on their Slack account (Profile → Preferences → Advanced → "Format messages with markup" is ON), so typed asterisks and underscores render correctly.
@@ -145,8 +163,10 @@ Slack is casual but it isn't sloppy. Every draft must clear a basic grammar bar 
 - **Spell out abbreviations on first use** where ambiguity is possible. After that, casual forms are fine.
 - **Hyphens with spaces around them (`- like this`) substitute for em dashes.** Em dashes (`—`) are still off-limits — they read as AI.
 - **No typo-style shortcuts.** "u" for "you", "ur" for "your", "thx" for "thanks" — out. Even in DMs.
+- **Spelling is always correct.** No misspellings, doubled words, dropped words, or wrong-word swaps — "its"/"it's", "your"/"you're", "their"/"there"/"they're", "then"/"than", "loose"/"lose". No dictation or autocorrect wreckage (the "try lending" → "trial ending" kind). Every draft is spell-clean, first pass.
+- **Never fake a typo to sound human.** Do not add, keep, or replicate a mistake to make a message look more authentically "them". Clean writing never reads as robotic; a typo reads as careless. Authenticity comes from vocabulary, rhythm, and warmth — never from errors.
 
-These rules apply to **every** draft, including casual DMs. They override voice-mirroring guidance: if a user's past messages drop apostrophes or skip capitals, do not replicate that. Mirror their vocabulary, openers, closers, hedge density, and rhythm; tighten the grammar.
+These rules apply to **every** draft, including casual DMs, and they are absolute: **grammatical and spelling correctness always wins over voice-mirroring.** Even when the operator's own past messages are riddled with typos, dropped apostrophes, missing capitals, or autocorrect debris, the draft comes out clean. Mirror their vocabulary, openers, closers, hedge density, and rhythm — never their mistakes. The skill makes them sound like themselves on their sharpest day, not their fastest-thumbed one.
 
 ## Match the Operator's Voice
 
