@@ -53,6 +53,7 @@ The gap between a frontier model and a merely good one is mostly *operating disc
 | [calendar-review](calendar-review/SKILL.md) | Calendar hygiene audit — protects focus blocks, finds slots, flags conflicts with concrete fallbacks |
 | [claude-memory](claude-memory/SKILL.md) | Tiered memory system (session → project → global → federated) with backup, doctor, ledger, and hook scripts |
 | [session-namer](session-namer/SKILL.md) | Generates clean, searchable session names from Claude Code conversation history via headless automation |
+| [session-recall](session-recall/SKILL.md) | Proactive cross-session recall: a four-step search ladder over past sessions with provenance-cited output and a "recalled ≠ still true" gate |
 | [posthog-design-customization](posthog-design-customization/SKILL.md) | PostHog dashboard colour-theming protocol via browser-fetch PATCH; documents the MCP field-stripping workaround |
 | [slack-status](slack-status/SKILL.md) | Sets Slack status via three-tier auth ladder (in-page fetch → self-copied session token → xoxp app token) |
 | [testing-standards](testing-standards/SKILL.md) | Project-scoped testing doctrine: fill-in-the-blank spec, surface coverage map, and per-layer verification gates |
