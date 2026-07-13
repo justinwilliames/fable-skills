@@ -49,8 +49,8 @@
 
 ```bash
 # Model and reasoning
--c model="gpt-5.5"
--c model_reasoning_effort="xhigh"      # minimal|low|medium|high|xhigh
+-c model="gpt-5.6-sol"
+-c model_reasoning_effort="high"       # low|medium|high|xhigh|max|ultra (5.6 ladder)
 -c model_reasoning_summary="detailed"   # auto|concise|detailed|none
 
 # Web search (for exec mode — --search flag is interactive-only)
@@ -67,23 +67,22 @@
 
 | Model | Use Case |
 |-------|----------|
-| `gpt-5.5` | Best coding model, xhigh reasoning + fast mode |
-| `gpt-5.5-pro` | Maximum performance, Pro/Enterprise only |
-| `gpt-5.4` | Previous best, still excellent |
-| `gpt-5.3-codex` | Older generation |
-| `gpt-5.3-codex-spark` | Ultra-fast, ChatGPT Pro only |
-| `gpt-5.1-codex-mini` | Cost-effective, fast |
-| `gpt-5.1-codex-max` | Long-horizon agentic tasks |
+| `gpt-5.6-sol` | GPT-5.6 flagship (released 2026-07-09) — the default here. Leads terminal/tool-loop agentic work; near-Fable depth (AA II 59 vs 60); requires codex-cli ≥ 0.144 |
+| `gpt-5.6-terra` | 5.6 mid-tier — do NOT use for adversarial review (measured −8.6pp recall regression) or long-horizon work (verbose) |
+| `gpt-5.6-luna` | 5.6 efficient tier — duplicates Haiku's lane; unused in this skill |
+| `gpt-5.5` | Previous flagship, still available (not deprecated) — fallback if 5.6 misbehaves |
+| `gpt-5.4` | Older generation |
 
-## Reasoning Effort
+## Reasoning Effort (GPT-5.6 ladder)
 
 | Level | Use Case |
 |-------|----------|
-| `minimal` | Fastest, simple tasks |
 | `low` | Quick edits |
-| `medium` | Daily driver |
-| `high` | Complex tasks |
-| `xhigh` | Maximum accuracy, benchmarks |
+| `medium` | Daily driver (CLI default) |
+| `high` | Complex tasks, adversarial review |
+| `xhigh` | Maximum single-agent accuracy |
+| `max` | Above xhigh — rare, concrete-signal-only |
+| `ultra` | Codex spawns its own subagent fan-out — never inside a delegate run (double-orchestration) |
 
 ## Sandbox Modes
 

@@ -165,7 +165,7 @@ OUTPUT:
   --dir "$WS" \
   --sandbox workspace-write \
   --effort high \
-  --model gpt-5.5
+  --model gpt-5.6-sol
 ```
 
 `--effort high` is the default for review mode (deeper reasoning matters more than speed for second-opinion work).

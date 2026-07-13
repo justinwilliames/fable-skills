@@ -106,7 +106,7 @@ Audit and QA failures are always surfaced to you — never auto-resolved.
 | Cheap parallel | Haiku 4.5 (Agent) | High-volume narrow text/data chunks (classify, convert, bulk edits) |
 | Large-context | Opus 4.8 1M (CLI subprocess) | A single chunk with a >150K read surface — never the seat |
 | Integration | Opus 4.8 (main, in-line) | `runner: main` chunks — glue, cross-cutting edits |
-| Precision | Codex GPT-5.5 | Deep work, adversarial review, second opinions |
+| Precision | Codex GPT-5.6 Sol | Deep work, adversarial review, second opinions |
 | Lookup | Haiku 4.5 (Explore subagent) | File search, symbol lookup |
 
 Full decision tree: [`references/routing.md`](references/routing.md)

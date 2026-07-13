@@ -136,9 +136,9 @@ run_codex() {
         exit 1
     fi
 
-    # Defaults for run: full-access sandbox, web search on, GPT-5.5 extra-high
+    # Defaults for run: full-access sandbox, web search on, GPT-5.6 Sol extra-high
     [[ -z "$SANDBOX" ]] && SANDBOX="danger-full-access"
-    [[ -z "$MODEL"  ]] && MODEL="gpt-5.4"
+    [[ -z "$MODEL"  ]] && MODEL="gpt-5.6-sol"
     [[ -z "$EFFORT" ]] && EFFORT="xhigh"
     SEARCH=true
 
@@ -158,9 +158,9 @@ think_codex() {
         exit 1
     fi
 
-    # Defaults for think: read-only sandbox, web search on, ephemeral, GPT-5.5 extra-high
+    # Defaults for think: read-only sandbox, web search on, ephemeral, GPT-5.6 Sol extra-high
     [[ -z "$SANDBOX" ]] && SANDBOX="read-only"
-    [[ -z "$MODEL"  ]] && MODEL="gpt-5.4"
+    [[ -z "$MODEL"  ]] && MODEL="gpt-5.6-sol"
     [[ -z "$EFFORT" ]] && EFFORT="xhigh"
     SEARCH=true
     EPHEMERAL=true
